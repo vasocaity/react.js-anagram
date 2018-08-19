@@ -5,10 +5,10 @@ class WordList extends Component {
         let {item} = this.props;
         return(
             <div className="mt-2">
-                ตัวอัษรที่ต้องการทำ anagram
+               array ของตัวอักษร
                 <ul>
                     {
-                      item.map((word) => <li key={word.toString()}>{word}</li>)
+                      item.map((word,i) => <li key={i}>{word}</li>)
                     }
                     
                 </ul>
