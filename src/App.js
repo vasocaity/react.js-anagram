@@ -26,7 +26,7 @@ class App extends Component {
         <Container>
           <Row>
             <Col sm={{ size: 6, order: 2, offset: 3 }}>
-              <FormAnagram onAddWord={this.addWord}></FormAnagram>
+              <FormAnagram onAddWord={this.addWord} strings={newWord}></FormAnagram>
               <WordList item={newWord}></WordList>
             </Col>
             <Col sm={{ size: 6, order: 2, offset: 3 }}>
